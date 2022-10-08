@@ -7,21 +7,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luz & Belleza</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/24e33e5dce.js" crossorigin="anonymous"></script>
     <style>
         .logo{
             height: 200px;
         }
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+            color: #fff;
+            background-color: #000000;
+        }
+        .nav-link {
+            color: #000000;
+        }
+        .nav-link:hover {
+            color: #4e4e4e;
+        }
+        a{
+            color: black;
+        }
+
+      .button-whatsapp{
+       
+        border-radius: 100%;
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+      }
     </style>
 </head>
 <body>
-    <div class="text-center">
-        <img src="/imgs/logonegro.png" alt="luz & belleza" class="logo">
+    <div class="text-center mb-3">
+        <img src="/imgs/logonegro.png" alt="luz & belleza" class="logo img-fluid">
     </div>
     <div class="container">
-        
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-5 align-self-center">
+                <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Inicio</button>
+                    </li>
+                    
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-como-llegar-tab" data-bs-toggle="pill" data-bs-target="#como-llegar" type="button" role="tab" aria-controls="pills-como-llegar" aria-selected="false">Como llegar?</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contacto-tab" data-bs-toggle="pill" data-bs-target="#contacto" type="button" role="tab" aria-controls="pills-contacto" aria-selected="false">Contacto</button>
+                    </li>
+                   
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="text-center">
+                            <h3 class="fw-normal">Bienvenid@ a</h3>
+                            <h3><b>Peluquería Luz & Belleza</b></h2>
+                            <h4>Para nosotros es un gusto atenderte, reserva tu cita! </h3>
+                        </div>
+                        
+                    </div>
+                    <div class="tab-pane fade" id="como-llegar" role="tabpanel" aria-labelledby="pills-como-llegar-tab">
+                        <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJs3U9HM-mMI4RzlqTqitjPJk&key=AIzaSyDrq708uTvNOfAVgNhWwmVVxnqTu78E1ek"></iframe>
+                    </div>
+                    <div class="tab-pane fade" id="contacto" role="tabpanel" aria-labelledby="pills-como-llegar-tab">
+                        <div class="fs-5">
+                            <i class="fa fa-whatsapp"></i> 314 885 0380<br/>
+                            <i class="fa  fa-phone"></i> (602) 407 2586<br/>
+                            <i class="fa fa-map-marked"></i> Calle 27 #43a - 33 B/ Villa del Sur<br/>
+                            <i class="fa fa-instagram"></i> <a href="https://www.instagram.com/pluzybelleza/" target="_blank">@pluzybelleza</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://wa.me/573148850380?text=Hola me gustaría reservar una cita" class="button-whatsapp" target="_blank">
+                    <img src="/imgs/logo-wasap.png" height="60" width="60">
+                </a>
+            </div>
+        </div>
     </div>
     
-    <h1 style="text-align: center">proximamente Luz y Belleza!...</h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
 </body>
 </html>
